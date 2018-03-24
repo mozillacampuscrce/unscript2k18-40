@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/homebg" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/toolbar6">
+    <TextView
+        android:id="@+id/Sample1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="This disclaimer informs readers that the views, thoughts, and opinions expressed in the text belong solely to the author, and not necessarily to the author’s employer, organization, committee or other group or individual.
+
+Otherwise, what one employee says may be construed as being what the entire company believes, thinks or condones, and this may be very inaccurate and damaging.
+
+“Views expressed” disclaimers are seen most often in personal opinion writing by experts or professionals working in the same field of study as their post.
+
+For example, a climate change scientist writing an editorial or opinion piece that involves the topic of climate change may include a disclaimer saying that the opinions are his own and not that of his employer.
+
+Another common use of a “views expressed” disclaimer is by people who are endorsing or critiquing a product that a company they work for produces or is involved with.
+
+In this situation, a disclaimer will let readers know that the writer is speaking solely for herself, not for the company or as a formal representative of the company.
+"       android:textSize="20sp"
+        android:padding="10sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"/>
+</ScrollView>
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageViewplaces"
+                android:src="@drawable/firebaseload"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="  Disclaimer" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

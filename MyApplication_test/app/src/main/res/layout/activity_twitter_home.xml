@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.somesh.tweet.twitter_home">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageViewplaces"
+                android:src="@drawable/twitter"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:text="Social tweet's" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar6"
+        app:srcCompat="@drawable/th"
+        android:scaleType="fitXY"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar6">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/option_55"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:hint=" Enter the #tag "
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:text=""
+            android:textColorHint="@android:color/black" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/option_55"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Search What's Trending on Twitter"
+                    android:textAlignment="gravity"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/but"
+            android:layout_width="250sp"
+            android:layout_height="50sp"
+            android:layout_below="@+id/tweet"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/myshapes"
+            android:text="Get Started!!!"
+            android:textAllCaps="false"
+            android:onClick="sync"
+            android:textSize="35sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/option_99"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="30sp"
+            android:layout_below="@+id/but"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/tweet"
+                android:scaleType="fitXY"/>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

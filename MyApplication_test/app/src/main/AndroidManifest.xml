@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.somesh.myapplication_test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fireapp1"
+        android:label="Fire Cloud"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="label">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.somesh.Login.Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:label="Fire Cloud"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.somesh.Login.Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.somesh.chat.chat"
+            android:label="Cloud Chat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Disclaimer"
+            android:label="Cloud Storage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.news.listview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.news.Detail_news"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.weather.weather_Start"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.weather.weather_report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.music.music_home"
+            android:label="Cloud music"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.tweet.twitter_home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.music.musicPlayer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.somesh.tweet.tweet_Home"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".insta"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tube"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
